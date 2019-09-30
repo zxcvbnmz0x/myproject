@@ -1,0 +1,19 @@
+.firstmenu{
+    display:inline-block;
+    opacity:0.7;
+    height:50px;
+    width:100%;
+    font-size:35px;
+    text-align:left;
+
+}
+
+.secondmenu{
+    display:inline-block;
+    opacity:0.7;
+    height:30px;
+    width:100%;
+    font-size:20px;
+    text-align:left;
+    margin-left:20px;
+}

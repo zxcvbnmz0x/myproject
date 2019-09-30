@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tittle %}主页面{% endblock %}</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="/static/css/head.css">
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/head.js"></script>
+    {% block jspath %}{% endblock %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--导航栏--->
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">主菜单</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <!--基础资料-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">基础资料<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">部门员工管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">产品字典</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">供应商管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">自定义文档</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">生产线定义</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">系统设置</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--采购管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">采购管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">采购计划</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <!--质量管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">质量管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">请验取样</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">检验报告</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">生产审核放行</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">留样记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">验证文档</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">质量辅助记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">环境监测</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">偏差/不合格处理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">自检记录</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--生产管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">生产管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">生产指令</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">生产车间</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">半成品登记/发放</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">物料登记/发放</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">生产审核放行</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">生产辅助记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">岗位工人</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--仓库管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">基础资料<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">进货登记</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">物料采购入库</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">物料入库/出库</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">产品寄库/入库</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">产品出库</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">半成品/前处理入库</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">生产领料/退料</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">物料调拨</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">退货处理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">仓库辅助记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">物料库存</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">产品库存</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--设备管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">设备资料<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">设备运行记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">设备维保记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">设备维修记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">事故记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">设备日常记录</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">工艺用水管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--销售管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">销售管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">销售订单</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">客户管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">客户投诉记录</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--综合管理-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">综合管理<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">文档管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">二维码库</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href= "/clerks/clerks" target = "_parent">二维码入、出、退库文件</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <!--系统维护-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">系统维护<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--子菜单-->
+                            <li><a href= "/clerks/clerks" target = "_parent">系统参数设置</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                --->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+{% block sider-bar %}
+<div class = "sider-bar col-md-2">
+    <p>这是侧边栏</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class = "content col-md-10">
+    <p>这是内容</p>
+</div>
+{% endblock %}
+</body>
+
+</html>

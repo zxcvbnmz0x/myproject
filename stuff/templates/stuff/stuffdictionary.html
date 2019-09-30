@@ -1,0 +1,90 @@
+{% extends "head.html" %}
+
+{% block tittle %}物料字典{% endblock %}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物料信息</title>
+    {% block jspath %}
+    <!--var allstuff = {{ allstuff|safe }};-->
+    <script type="text/javascript">
+	    var stuff = {{ stuff|safe }};
+
+
+    </script>
+
+    <script type="text/javascript" src="/static/js/tools.js"></script>
+    <script type="text/javascript" src="/static/js/utils.js"></script>
+
+    <script type="text/javascript" src="{% static 'stuff/js/stuffdictionary.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'stuff/css/stuffdictionary.css' %}">
+    {% endblock %}
+
+</head>
+<body>
+{% block content%}
+<!-- 弹窗 -->
+<div id="detail" class="detail">
+
+    <!-- 弹窗内容 -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail3">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="jane.doe@example.com">
+            </div>
+
+            <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+    </div>
+
+</div>
+<div class="location_card col-md-10">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <td colspan="7">
+                <button class="glyphicon glyphicon-plus">增加</button>
+                <button class="glyphicon glyphicon-minus">删除</button>
+                <button class="glyphicon glyphicon-save">下载</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7">
+                <button>全部</button>
+                <button>主材料</button>
+                <button>辅材料</button>
+                <button>内包材</button>
+                <button>外包材</button>
+            </td>
+        </tr>
+        <tr>
+            <td>编号</td>
+            <td>名称</td>
+            <td>种类</td>
+            <td>含量规格</td>
+            <td>包装规格</td>
+            <td>批准文号</td>
+            <td>储存条件</td>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+</body>
+</html>

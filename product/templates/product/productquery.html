@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    {% load static %}
+    <script type="text/javascript">
+    var allproductlist = {{ allproductlist|safe }};
+    </script>
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"> </script>
+    <script type="text/javascript" src="{% static 'product/js/prodio.js' %}"> </script>
+    <link rel="stylesheet" href="{% static 'product/css/showprodio.css' %}" >
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+     <title>仓库产品货位卡</title>
+</head>
+
+<body>
+	<h1>仓库产品货位卡</h1>
+<div id="location_card"></div>
+
+<nav aria-label="Page navigation"class = "nav">
+        <ul id = "paging" class="pagination">
+            <li class = "previousPage pagination-sm"><span aria-hidden="true">&laquo;</span></li>
+            <input type="text" id="pagenum"  class="inputpage"/>
+        <button id="topage" type="submit" class="btn btn-default">跳转</button>
+        </ul>
+    <!--<label class="pagenum"></label>-->
+
+</nav>
+</body>
+</html>
+

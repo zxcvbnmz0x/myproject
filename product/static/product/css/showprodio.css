@@ -1,0 +1,32 @@
+h1 {
+	text-align:center;
+}
+
+.stuffiolist div {
+    text-align:center;
+	display:inline;
+	margin:10px;
+	 font:24px/1.5em  "宋体",sans-serif;
+}
+
+table{
+    width:100%;
+    border:2px red
+}
+
+td {
+	text-align:center;
+	font:24px/1.5em  "宋体";
+}
+
+.nav {
+    text-align:center;
+    cursor:pointer;
+}
+.inputpage {
+    width:40px;
+}
+.mousecover{
+    cursor:pointer;
+}
+

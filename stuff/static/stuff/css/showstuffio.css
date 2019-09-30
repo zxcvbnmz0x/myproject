@@ -1,0 +1,36 @@
+h1 {
+	text-align:center;
+
+}
+/*
+li{
+    margin:1px;
+    font:30px/2em  "宋体",sans-serif;
+    background-color:rgb(255, 255, 255);
+}*/
+.stuffiolist div {
+    text-align:center;
+	display:inline;
+	margin:10px;
+	 font:24px/1.5em  "宋体",sans-serif;
+}
+
+table{
+    width:100%;
+    border:2px red
+}
+
+td {
+	text-align:center;
+	font:24px/1.5em  "宋体";
+}
+.nav {
+    text-align:center;
+
+}
+.inputpage {
+    width:40px;
+}
+
+
+
